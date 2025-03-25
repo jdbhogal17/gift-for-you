@@ -1,0 +1,105 @@
+html, body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+}
+
+.clean-btn {
+    z-index: 1;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    text-shadow: 0 0 10px #000000;
+    user-select: none;
+    padding: 0 5px 15px 15px;
+    position: relative;
+    cursor: pointer;
+	 text-decoration: underline;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.name {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 4vw;
+    text-shadow: 0 0 5px #000000;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+a {
+    text-decoration: none;
+  }
+  
+  .btn {
+    border: none;
+    width: 15em;
+    height: 5em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #ffbbff;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+  }
+  
+  .sparkle {
+    fill: #151111;
+    transition: all 800ms ease;
+  }
+  
+  .text {
+    font-weight: 600;
+    color: #201b1b;
+    font-size: medium;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(0deg, #A47CF3, #683FEA);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+      inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+      0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+      0px 0px 180px 0px #9917FF;
+    transform: translateY(-2px);
+  }
+  
+  .btn:hover .text {
+    color: white;
+  }
+  
+  .btn:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+  }
+
+@media all and (min-width: 640px) {
+    .name {
+        font-size: 45px
+    }
+}
+
